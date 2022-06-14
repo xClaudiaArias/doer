@@ -11,6 +11,9 @@ class User(models.Model):
   email = models.CharField(max_length=30)
   password = models.CharField(max_length=30)
   created = models.DateField(default= datetime.date.today)
+  
+  def __str__(self):
+    return self.username
 
 class ToDo(models.Model):
   user = models.ForeignKey(User, on_delete=models.CASCADE)
@@ -22,4 +25,6 @@ class ToDo(models.Model):
   created = models.DateField(default= datetime.date.today)
   updated = models.DateField(auto_now=True)
   
+  def __str__(self):
+    return self.title
 
