@@ -1,9 +1,13 @@
 import "./App.css";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+// import Navbar from "./components/Navbar";
+// import Dogs from "./pages/Dogs";
 
 function App() {
   return (
-    <div className="App">
-      <h1>Hello</h1>
+    <div>
+      {/* <Navbar /> */}
+      <h1>THIS IS THE MAIN PAGE</h1>;
     </div>
   );
 }
